@@ -3,13 +3,12 @@ package pl.kti.cp.introduction;
 import java.util.*;
 
 public class Sorter {
-	private List _words;
+	private List<String> _words;
 
 	public Sorter() {
-		_words = new ArrayList();
+		_words = new ArrayList<String>();
 	}
 
-	@SuppressWarnings("unchecked")
 	public void sort(String[] words) {
 		_words = Arrays.asList(words);
 		Collections.sort(_words);
